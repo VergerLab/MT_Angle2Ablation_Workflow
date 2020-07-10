@@ -4,28 +4,30 @@
 /////////////////////////////Marion Louveaux//////////////////////////////////////
 /////////////////////////////Stéphane Verger//////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////
-
-// This macro is an automated version of FibrilTool macro written by Arezki Boudaoud 
-//(see Boudaoud et al., Nature Protocols 2014)
-// Put .tif and RoiSet.zip in a unique directory (as many as you want) = "dir"
-// .tif and RoiSet.zip must share the same name: ImgName.tif and ImgName_RoiSet.zip
-// One RoiSet.zip = one .tif
-// FibrilTool is executed on each .roi of the RoiSet
-// Results, raw data (new RoiSet) and Flattened images are saved in dir
-
-// #### Warning ####
-// This version has been slightly modified by Stéphane Verger compared to the 
-// original version of FibrilTool_Batch.ijm 
-//(https://github.com/marionlouveaux/FibrilTool_Batch)
-//See https://github.com/VergerLab/MT_Angle2Ablation_Workflow for more 
-//detailed explanaitions of use.
-
-
-///====================================================///
-///==================FibrilTool Batch==================///
-///====================================================///
-
+///======================MACRO=========================///
 macro_name = "FibrilTool_Batch";
+///====================================================///
+///File author(s): Stephane Verger, 
+//                 Marion Louveaux, 
+//                 Arezki Boudaoud=====================///
+
+///====================Description=====================///
+/*The original FibrilTool macro was written by Arezki Boudaoud 
+(see Boudaoud et al., Nature Protocols 2014).
+An automated/batch version of this macro has been implemented by 
+Marion Louveaux (https://github.com/marionlouveaux/FibrilTool_Batch).
+This version has been slightly modified by Stéphane Verger compared 
+to the original version of FibrilTool_Batch.ijm 
+(https://github.com/marionlouveaux/FibrilTool_Batch).
+
+Put .tif and RoiSet.zip in a unique directory (as many as you want) = "dir"
+.tif and RoiSet.zip must share the same name: ImgName.tif and ImgName_RoiSet.zip
+One RoiSet.zip = one .tif
+FibrilTool is executed on each .roi of the RoiSet
+Results, raw data (new RoiSet) and Flattened images are saved in dir
+See https://github.com/VergerLab/MT_Angle2Ablation_Workflow for more 
+detailed explanaitions of use.
+*/
 macro_source = "https://github.com/VergerLab/MT_Angle2Ablation_Workflow/FibrilTool_Batch.ijm";
 
 ///=========Input/output file names parameters=========///
