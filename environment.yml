@@ -8,5 +8,5 @@ dependencies:
   - matplotlib==3.2.2
   - pandas==1.0.5
   - seaborn==0.10.1
-  - pip==20.1.1:
+  - pip:
     - watermark==2.0.2
