@@ -1,0 +1,14 @@
+name: Stats_Angle2Abaltion
+channels:
+  - defaults
+dependencies:
+  - python=3.7
+  - jupyterlab
+  - scipy
+  - matplotlib
+  - pandas
+  - seaborn
+  - pip:
+    - watermark
+
+
