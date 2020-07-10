@@ -1,9 +1,9 @@
-////////////////////////////////////////////////////////////////////////
-//////====================Line_RoiMaker====================/////////////
-////////////////////////////////////////////////////////////////////////
-////////File author(s): Stéphane Verger ////////////////////////////////
-////////////////////////////////////////////////////////////////////////
+///======================MACRO=========================///
+macro_name = "Line_RoiMaker";
+///====================================================///
+///File author(s): Stephane Verger=====================///
 
+///====================Description=====================///
 /*This macro allows a semi-automated creation of line ROI sets that are 
 used for angle calculation between the output of fibrilToolBatch and the 
 ablation site. 
@@ -11,13 +11,6 @@ It uses as input, the output files from the fibriltoolbatch.ijm macro.
 See https://github.com/VergerLab/MT_Angle2Ablation_Workflow for more 
 detailed explanaitions of use.
 */
-
-
-///====================================================///
-///===================Line_RoiMaker====================///
-///====================================================///
-
-macro_name = "Line_RoiMaker";
 macro_source = "https://github.com/VergerLab/MT_Angle2Ablation_Workflow/Line_RoiMaker.ijm";
 
 ///=========Input/output file names parameters=========///
