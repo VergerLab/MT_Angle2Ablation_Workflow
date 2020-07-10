@@ -3,12 +3,10 @@ channels:
   - defaults
 dependencies:
   - python=3.7
-  - jupyterlab
-  - scipy
-  - matplotlib
-  - pandas
-  - seaborn
+  - jupyterlab==2.1.5
+  - scipy==1.5.0
+  - matplotlib==3.2.2
+  - pandas==1.0.5
+  - seaborn==0.10.1
   - pip:
-    - watermark
-
-
+    - watermark==2.0.2
