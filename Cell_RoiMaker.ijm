@@ -1,9 +1,9 @@
-/////////////////////////////////////////////////////////////////////////
-////////////////////====Cell_RoiMaker====////////////////////////////////
-/////////////////////////////////////////////////////////////////////////
-////////File author(s): Stéphane Verger /////////////////////////////////
-/////////////////////////////////////////////////////////////////////////
+///======================MACRO=========================///
+macro_name = "Cell_RoiMaker";
+///====================================================///
+///File author(s): Stephane Verger=====================///
 
+///====================Description=====================///
 /*This macro allows a semi-automated segmentation and creation of ROI sets 
 that can then be used in fibrilToolBatch (Creates input for FibrilTool_Batch.ijm;
 https://github.com/sverger/FibrilTool_Batch).
@@ -18,12 +18,6 @@ This macro can replace the Segmentation4FTBatch macro
 See https://github.com/VergerLab/MT_Angle2Ablation_Workflow for more 
 detailed explanaitions of use.
 */
-
-///====================================================///
-///===================Cell_RoiMaker====================///
-///====================================================///
-
-macro_name = "Cell_RoiMaker";
 macro_source = "https://github.com/VergerLab/Cell_RoiMaker";
 
 ///=========Input/output file names parameters=========///
