@@ -3,7 +3,7 @@ Set of ImageJ and python scripts for the analysis of cortical microtubules orien
 
 Surfcut.ijm --> Cell_RoiMaker.ijm --> FibrilTool_Batch_Workflow.ijm --> Line_RoiMaker.ijm --> Angle2Ablation.ijm --> Stats_Angle2Ablation.ipynb
 
-SurfCut: https://github.com/VergerLab/FibrilTool_Batch_Workflow
+SurfCut: https://github.com/VergerLab/SurfCut2
 
 FibrilTool_Batch_Workflow: https://github.com/VergerLab/FibrilTool_Batch_Workflow
 
