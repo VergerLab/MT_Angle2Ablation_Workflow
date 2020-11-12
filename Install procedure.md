@@ -38,10 +38,21 @@ The macro “Cell_ROIMaker.ijm” uses the plug-in MorpholibJ (Legland et al., 2
 
 ### No-install Jupyter notebook online through Binder:
 A temporary version of the Jupyter notebook can be used on your web browser using binder. 
-1. To start it click here [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/VergerLab/MT_Angle2Ablation_Workflow/master) (it can take a few minutes to start it). 
-2. Then, upload your data in the “Data” folder on the web page. Only the file called All_….txt
-3. Once this is done, click on “Stats_Angle2Ablation.ipynb” this will start a new tab on your browser with the Jupyter notebook named “Statistics for Angle to ablation Analysis”. 
-4. Start the analysis process at the first line (“Load required packages”), click on it to select (Blue on the left side) and then use “shift + enter” to run the line. Proceed as for the first line with the rest. For the line, “single_file_path” put the path leading to your own data. To finish run the rest of the lines.
+
+1. __To start it__ click here [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/VergerLab/MT_Angle2Ablation_Workflow/master)
+
+It can take a few minutes to start it. Ultimately you will see the "home page" with all the content of the Github repository.
+
+2. You can first __test the Notebook with the pre-loaded data__. To do this, click on “Stats_Angle2Ablation.ipynb”. This will start a new tab on your browser with the Jupyter notebook named “Statistics for Angle to ablation Analysis”. Then, follow the instructions in the notebook itself.
+
+3. Then, to perform your own analysis, __upload your own data__. 
+ - On the "home page", Click "New" and "Folder" in the top right corner.
+ - Tick the box next to the newly created "Untitled Folder".
+ - Click on "rename" above, and rename the folder "MyData" (or anything else of your choice).
+ - Enter this folder and at the top right corner click "Upload".
+ - You only need to upload the file called All_….txt. Each genotype and condition analyzed generate one such file. Each of this file has to be put in a separate folder under the "MyData" repository.
+
+4. You can then __perform your own analysis__ using the notebook, in the same manner as with the pre-loaded data. Don't forget to define the correct path to your own data in the notebook.
 
 ### Local installation:
 
