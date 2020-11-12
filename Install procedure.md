@@ -37,7 +37,7 @@ The macro “Cell_ROIMaker.ijm” uses the plug-in MorpholibJ (Legland et al., 2
 ## - Jupyter notebook: 
 
 ### No-install Jupyter notebook online through Binder:
-A temporary version of the Jupyter notebook can be used on your browser  using binder. 
+A temporary version of the Jupyter notebook can be used on your web browser using binder. 
 1. To start it click here [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/VergerLab/MT_Angle2Ablation_Workflow/master) (it can take a few minutes to start it). 
 2. Then, upload your data in the “Data” folder on the web page. Only the file called All_….txt
 3. Once this is done, click on “Stats_Angle2Ablation.ipynb” this will start a new tab on your browser with the Jupyter notebook named “Statistics for Angle to ablation Analysis”. 
@@ -58,8 +58,9 @@ A temporary version of the Jupyter notebook can be used on your browser  using b
    
    LINUX: Open a new terminal window, go to the directory where you downloaded the installer and run:
    > Note: To navigate to a specific directory, you can do it in the terminal with the "cd" (Change directory) command. 
-   Alternatively you can simply navigate with your regular graphical interface file manager (e.g. Nautilus). 
-   Then right-click in the folder of interest and select "Open in terminal". 
+   Alternatively you can simply navigate with your regular graphical interface file manager and open a terminal from there. 
+   On linux, right-click in the folder of interest and select "Open in terminal". 
+   On Windows, you can press the Shift key and right-click on a folder to open a PowerShell window directly to that folder.
    You can then directly paste the commands below into the terminal and press enter.
   
        bash Miniconda2-latest-Linux-x86_64.sh
@@ -87,7 +88,7 @@ To do this you can directly copy and paste the commands below into the terminal 
 	conda deactivate
   
   > View the available environments : 
-  
+  if not you can find the web link to the Jupyter notebook on the command window
 	conda env list
 
 4. __Download and extract the "MT_Angle2Ablation" repository__ to the location of your choice.
@@ -109,18 +110,12 @@ To do this you can directly copy and paste the commands below into the terminal 
 
        conda activate Stats_Angle2Abaltion
 
+8. __Start Jupyter__.
 
-- Commands for Anaconda prompt for Windows:
-To open the Jupyter notebook for the statistical analysis of the angles to ablation. You have to open first the command on the “Start” menu. Then you have to create a new environment. To do so you enter the command: 
-conda env create
-Following that command, before clicking on enter; write the name of the environment you wish to create (wait a few minutes until the installation of the packages in the environment is done) : 
-Stats_Angle2Ablation_V2
-In order to activate this new environment enter the following command:
-conda activate Stats_Angle2Ablation
-Note that you can find the path of all the environments that you created by using the command: 
-conda info --envs
-Once Stats_Angle2Ablation is activated type as command:
-jupyter lab
-A web page should open automatically if not you can find the web link to the Jupyter notebook on the command window.
-    • “Statistics for Angle to ablation Analysis” Jupyter notebook:
-Here, start at the first line (“Load required packages”), click on it to select (Blue on the left side) and then use “shift + enter” to run the line. Proceed as for the first line with the rest. For the line, “single_file_path” put the path leading to your own data. To finish run the rest of the lines.
+		jupyter lab
+
+A page called "JupyterLab" should open automatically on your web browser.
+
+9. __Open the Python notebook__. to do that, in the menu on the left, double click on "Stats_Angle2Abaltion.ipynb".
+
+10. Finally, __to run the notebook__, follow the instructions in the notebook itself.
