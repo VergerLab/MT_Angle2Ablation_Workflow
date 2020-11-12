@@ -45,12 +45,12 @@ It can take a few minutes to start it. Ultimately you will see the "home page" w
 
 2. You can first __test the Notebook with the pre-loaded data__. To do this, click on “Stats_Angle2Ablation.ipynb”. This will start a new tab on your browser with the Jupyter notebook named “Statistics for Angle to ablation Analysis”. Then, follow the instructions in the notebook itself.
 
-3. Then, to perform your own analysis, __upload your own data__. 
- - On the "home page", Click "New" and "Folder" in the top right corner.
+3. To perform your own analysis, __upload your own data__. 
+ - On the "home page", click "New" and "Folder" in the top right corner.
  - Tick the box next to the newly created "Untitled Folder".
  - Click on "rename" above, and rename the folder "MyData" (or anything else of your choice).
- - Enter this folder and at the top right corner click "Upload".
- - You only need to upload the file called All_….txt. Each genotype and condition analyzed generate one such file. Each of this file has to be put in a separate folder under the "MyData" repository.
+ - Enter the "MyData" folder and at the top right corner click "Upload".
+ - From the output of the Angle2Ablation.ijm macro, you only need to upload the file called All_….txt. Each genotype and timepoint analyzed generate one such file. Each of these file has to be put in a separate folder under the "MyData" directory.
 
 4. You can then __perform your own analysis__ using the notebook, in the same manner as with the pre-loaded data. Don't forget to define the correct path to your own data in the notebook.
 
