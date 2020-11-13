@@ -3,7 +3,7 @@
 In the simplest version of the installation you only need to have Fiji, the few macros listed below and the plug-in MorpholibJ.
 
 Then, data analysis can be performed with any appropriate software, but here we propose a user-friendly python __Jupyter notebook__ with predefined graph output and statistical analysis to ease the analysis of the results.
-This notebook can be run locally on your computer after installing the required software and python libraries, __or with no install using binder directly from your browser__. 
+This notebook can be run locally on your computer after installing the required software and python libraries, __or with no install using binder directly from your web browser__. 
 
 The detailed explanation for the installation of these components is presented below.
 
@@ -13,8 +13,8 @@ Most of the workflow is designed to run on Fiji. If you don’t already have it,
 ## - Macros: 
 You will need (available for download at): 
 - SurfCut2.ijm (https://github.com/VergerLab/SurfCut2) 
-- FibrilTool_Batch_Workflow.ijm (https://github.com/VergerLab/FibrilTool_Batch_Workflow)
 - Cell_ROIMaker.ijm (https://github.com/VergerLab/MT_Angle2Ablation_Workflow)
+- FibrilTool_Batch_Workflow.ijm (https://github.com/VergerLab/FibrilTool_Batch_Workflow)
 - Line_ROIMaker.ijm (https://github.com/VergerLab/MT_Angle2Ablation_Workflow)
 - Angle2Ablation.ijm (https://github.com/VergerLab/MT_Angle2Ablation_Workflow)
 
@@ -22,7 +22,9 @@ Each of these macro can be directly downloaded in the folder of your choice.
 
   To run the macro: 
   1. Drag and drop the macro file into Fiji to open it.
-  2. Click run in the editor window to run it. 
+  2. Click run in the editor window to run it.
+  
+Then follow the userguide understand how to operate the workflow.
 
 ## - Plugins: 
 The macro “Cell_ROIMaker.ijm” uses the plug-in MorpholibJ (Legland et al., 2016; https://imagej.net/MorphoLibJ).
@@ -50,7 +52,7 @@ It can take a few minutes to start it. Ultimately you will see the "home page" w
  - Tick the box next to the newly created "Untitled Folder".
  - Click on "rename" above, and rename the folder "MyData" (or anything else of your choice).
  - Enter the "MyData" folder and at the top right corner click "Upload".
- - From the output of the Angle2Ablation.ijm macro, you only need to upload the file called All_….txt. Each genotype and timepoint analyzed generate one such file. Each of these file has to be put in a separate folder under the "MyData" directory.
+ - From the output of the Angle2Ablation.ijm macro, you only need to upload the file called All_….txt. Each genotype and timepoint analyzed generate one such file. Each of these file has to be put in a separate folder under the "MyData" directory. As an exemple you can look at the content of the "Data" directory containing the pre-loaded test data.
 
 4. You can then __perform your own analysis__ using the notebook, in the same manner as with the pre-loaded data. Don't forget to define the correct path to your own data in the notebook.
 
@@ -81,9 +83,9 @@ It can take a few minutes to start it. Ultimately you will see the "home page" w
        bash Miniconda2-latest-MacOSX-x86_64.sh
        rm Miniconda2-latest-MacOSX-x86_64.sh
 	
-   Windows: Execute the installer and follow the instructions
+   Windows: Execute the ".exe" installer and follow the instructions.
 	
-   During the installation you will be asked a number of choices. You can set up the directory of your choice when asked, e.g. ~/.miniconda. Make sure to answer YES when asked to add conda to your PATH
+   During the installation you will be asked a number of choices. You can set up the directory of your choice when asked, e.g. ~/.miniconda. Make sure to answer YES when asked to add conda to your PATH.
 
 3. You should now have miniconda properly installed; __test your installation__ by running "conda" in a terminal to make sure the command is found. 
 To do this, on LINUX and MAC, you can directly copy and paste the commands below into the terminal and press enter. On Windows, look for "Miniconda prompt" in the search bar (next to the windows icon, bottom left of the desktop screen). Open the "Miniconda prompt" and directly continue to step 4.
@@ -92,14 +94,13 @@ To do this, on LINUX and MAC, you can directly copy and paste the commands below
 
 
 4. __Download and extract the "MT_Angle2Ablation" repository__ to the location of your choice.
-   To do this, click on the green "code" icon on the top right side of the repository page. Then "Download ZIP". 
+   To do this, click on the green "code" icon on the top right side of the repository page (https://github.com/VergerLab/MT_Angle2Ablation_Workflow/). Then "Download ZIP". 
    Finally extract the content of the zip to the location of your choice. 
 
-5. __Create and activate a conda environment__. To do this, inyou terminal (LINUX and MAC) or Miniconda Prompt (Windows), navigate to the "/MT_Angle2Ablation" folder that you have downloaded and extracted in the previous step.
+5. __Create and activate a conda environment__. To do this, in your terminal (LINUX and MAC) or Miniconda Prompt (Windows), navigate to the "/MT_Angle2Ablation" folder that you have downloaded and extracted in the previous step.
   > Note: To navigate to a specific directory, you can do it in the terminal (LINUX and MAC) or Miniconda Prompt (Windows) with the "cd" (Change directory) command. 
    Alternatively, on linux you can simply navigate with your regular graphical interface file manager (e.g. Nautilus). 
    Then, right-click in the folder of interest and select "Open in terminal".
-   On Windows, you can press the Shift key and right-click on a folder to open a PowerShell window directly to that folder.
    You can then directly paste the commands below into the terminal and press enter.
 
 6. __Define a new conda environment__. To do this you can directly copy and paste the commands below into the terminal or Miniconda Prompt and press enter.
@@ -124,7 +125,7 @@ A page called "JupyterLab" should open automatically on your web browser.
 
 When you are done with the analysis, you can close the web page and the terminal or Miniconda prompt that was used to launch Jupyter lab.
 
-Later on, to restart and analysis, you only need to follow steps 7 to 10.
+Later on, to restart an analysis, you only need to follow steps 7 to 10.
   
   > Conda tips:
   >
