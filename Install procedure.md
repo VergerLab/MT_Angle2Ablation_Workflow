@@ -52,7 +52,7 @@ It can take a few minutes to start it. Ultimately you will see the "home page" w
  - Tick the box next to the newly created "Untitled Folder".
  - Click on "rename" above, and rename the folder "MyData" (or anything else of your choice).
  - Enter the "MyData" folder and at the top right corner click "Upload".
- - From the output of the Angle2Ablation.ijm macro, you only need to upload the file called All_….txt. Each genotype and timepoint analyzed generate one such file. Each of these file has to be put in a separate folder under the "MyData" directory. As an exemple you can look at the content of the "Data" directory containing the pre-loaded test data.
+ - From the output of the Angle2Ablation.ijm macro, you only need to upload the file called All_….txt. Each genotype and timepoint analyzed generate one such file. Each of these file has to be put in a separate folder under the "MyData" directory. As an exemple you can look at the content of the "TestData" directory containing the pre-loaded test data.
 
 4. You can then __perform your own analysis__ using the notebook, in the same manner as with the pre-loaded data. Don't forget to define the correct path to your own data in the notebook.
 
