@@ -69,15 +69,14 @@ It can take a few minutes to start it. Ultimately you will see the "home page" w
    
    LINUX: Open a new terminal window, go to the directory where you downloaded the installer and run:
    > Note: To navigate to a specific directory, you can do it in the terminal with the "cd" (Change directory) command. 
-   Alternatively you can simply navigate with your regular graphical interface file manager and open a terminal from there. 
-   On linux, right-click in the folder of interest and select "Open in terminal". 
-   On Windows, you can press the Shift key and right-click on a folder to open a PowerShell window directly to that folder.
+   Alternatively, on linux you can simply navigate with your regular graphical interface file manager (e.g. Nautilus). 
+   Then, right-click in the folder of interest and select "Open in terminal".
    You can then directly paste the commands below into the terminal and press enter.
   
        bash Miniconda2-latest-Linux-x86_64.sh
        rm Miniconda2-latest-Linux-x86_64.sh
       
-	 MAC: Open a new terminal window, go to the directory where you downloaded the installer and run:
+	MAC: Open a new terminal window, go to the directory where you downloaded the installer and run:
  
        bash Miniconda2-latest-MacOSX-x86_64.sh
        rm Miniconda2-latest-MacOSX-x86_64.sh
@@ -87,31 +86,23 @@ It can take a few minutes to start it. Ultimately you will see the "home page" w
    During the installation you will be asked a number of choices. You can set up the directory of your choice when asked, e.g. ~/.miniconda. Make sure to answer YES when asked to add conda to your PATH
 
 3. You should now have miniconda properly installed; __test your installation__ by running "conda" in a terminal to make sure the command is found. 
-To do this you can directly copy and paste the commands below into the terminal and press enter.
+To do this, on LINUX and MAC, you can directly copy and paste the commands below into the terminal and press enter. On Windows, look for "Miniconda prompt" in the search bar (next to the windows icon, bottom left of the desktop screen). Open the "Miniconda prompt" and directly continue to step 4.
 
 	   conda
 
-
-  > Conda tips:
-  >
-  > Get out of the current conda environment : 
-  
-	conda deactivate
-  
-  > View the available environments : 
-  if not you can find the web link to the Jupyter notebook on the command window
-	conda env list
 
 4. __Download and extract the "MT_Angle2Ablation" repository__ to the location of your choice.
    To do this, click on the green "code" icon on the top right side of the repository page. Then "Download ZIP". 
    Finally extract the content of the zip to the location of your choice. 
 
-5. __Create and activate a conda environment__. To do this, navigate to the "/MT_Angle2Ablation" folder that you have downloaded and extracted in the previous step.
-  > Note: To navigate to a specific directory, you can do it in the terminal with the "cd" (Change directory) command. 
-   Alternatively you can simply navigate with your regular graphical interface file manager (e.g. Nautilus). 
-   Then right-click in the folder of interest and select "Open in terminal". 
+5. __Create and activate a conda environment__. To do this, inyou terminal (LINUX and MAC) or Miniconda Prompt (Windows), navigate to the "/MT_Angle2Ablation" folder that you have downloaded and extracted in the previous step.
+  > Note: To navigate to a specific directory, you can do it in the terminal (LINUX and MAC) or Miniconda Prompt (Windows) with the "cd" (Change directory) command. 
+   Alternatively, on linux you can simply navigate with your regular graphical interface file manager (e.g. Nautilus). 
+   Then, right-click in the folder of interest and select "Open in terminal".
+   On Windows, you can press the Shift key and right-click on a folder to open a PowerShell window directly to that folder.
+   You can then directly paste the commands below into the terminal and press enter.
 
-6. __Define a new conda environment__. To do this you can directly copy and paste the commands below into the terminal and press enter.
+6. __Define a new conda environment__. To do this you can directly copy and paste the commands below into the terminal or Miniconda Prompt and press enter.
 
        conda env create -f environment.yml
    
@@ -127,6 +118,20 @@ To do this you can directly copy and paste the commands below into the terminal 
 
 A page called "JupyterLab" should open automatically on your web browser.
 
-9. __Open the Python notebook__. to do that, in the menu on the left, double click on "Stats_Angle2Abaltion.ipynb".
+9. __Open the Python notebook__. To do that, in the menu on the left, double click on "Stats_Angle2Abaltion.ipynb".
 
 10. Finally, __to run the notebook__, follow the instructions in the notebook itself.
+
+When you are done with the analysis, you can close the web page and the terminal or Miniconda prompt that was used to launch Jupyter lab.
+
+Later on, to restart and analysis, you only need to follow steps 7 to 10.
+  
+  > Conda tips:
+  >
+  > Get out of the current conda environment : 
+  
+	conda deactivate
+  
+  > View the available environments : 
+
+	conda env list
