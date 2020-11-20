@@ -38,8 +38,14 @@ The macro “Cell_ROIMaker.ijm” uses the plug-in MorpholibJ (Legland et al., 2
 
 ## - Jupyter notebook: 
 
+The following video provides a very useful introduction to the use of Python an jupyter notebooks for bioimage analysis. In particular for running a notebook on Binder (38:10 --> 41:47) for the No-install approach. as well as how to insatll miniconda (49:34 --> 51:16).
+
+https://www.youtube.com/watch?v=2KF8vBrp3Zw
+
+We also recommand the very useful lecture series on BioImage Analysis from Robert Haase (https://www.youtube.com/playlist?list=PL5ESQNfM5lc7SAMstEu082ivW4BDMvd0U), in particular the lecture 9 to 11 about the use of python for data analysis and hypothesis testing. In addition some help can be found for the local install of miniconda in lecture 9b (https://youtu.be/MOEPe9TGBK0?t=1807)
+
 ### No-install Jupyter notebook online through Binder:
-A temporary version of the Jupyter notebook can be used on your web browser using binder. 
+A temporary version of the Jupyter notebook can be used on your web browser using binder.
 
 1. __To start it__ click here [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/VergerLab/MT_Angle2Ablation_Workflow/master)
 
@@ -54,9 +60,12 @@ It can take a few minutes to start it. Ultimately you will see the "home page" w
  	- Enter the "MyData" folder and at the top right corner click "Upload".
  	- From the output of the Angle2Ablation.ijm macro, you only need to upload the file called All_….txt. Each genotype and timepoint analyzed generate one such file. Each of these file has to be put in a separate folder under the "MyData" directory. As an exemple you can look at the content of the "TestData" directory containing the pre-loaded test data.
 
-4. You can then __perform your own analysis__ using the notebook, in the same manner as with the pre-loaded data. Don't forget to define the correct path to your own data in the notebook.
+4. You can then __perform your own analysis__ using the notebook, in the same manner as with the pre-loaded data. Don't forget to define the correct path to your own data in the notebook. Also don't forget to download the generate dtat at the end of the analysis, as the session will be erased when you are done.
+
+For additional help on how to perform these step, the video mentioned above shows how to start the notebook (https://youtu.be/2KF8vBrp3Zw?t=2289), run it (https://youtu.be/2KF8vBrp3Zw?t=2365), as well as how to upload you own data (https://youtu.be/2KF8vBrp3Zw?t=2427).
 
 ### Local installation:
+For additional help on how to perform the steps below, one of the video mentioned above shows how to install miniconda for windows (https://youtu.be/MOEPe9TGBK0?t=1807) and how to start it and activate an environment (https://youtu.be/MOEPe9TGBK0?t=2051). The instructions are not exactly the same as the ones described below but they can help you better understand how to perform them.
 
 1. __Download the miniconda installer__ from the official website repo.continuum.io\
 	LINUX: https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh \
