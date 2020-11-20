@@ -61,7 +61,7 @@ It can take a few minutes to start it. Ultimately you will see the "home page" w
 
 4. You can then __perform your own analysis__ using the notebook, in the same manner as with the pre-loaded data. Don't forget to define the correct path to your own data in the notebook. Also don't forget to download the generate dtat at the end of the analysis, as the session will be erased when you are done.
 
-For additional help on how to perform these step, the video mentioned above shows how to start the notebook (https://youtu.be/2KF8vBrp3Zw?t=2289), run it (https://youtu.be/2KF8vBrp3Zw?t=2365), as well as how to upload you own data (https://youtu.be/2KF8vBrp3Zw?t=2427).
+For additional help on how to perform these step, the video mentioned above shows how to start the notebook (https://youtu.be/2KF8vBrp3Zw?t=2289), run it (https://youtu.be/2KF8vBrp3Zw?t=2365), as well as how to upload your own data (https://youtu.be/2KF8vBrp3Zw?t=2427).
 
 ### Local installation:
 For additional help on how to perform the steps below, one of the video mentioned above shows how to install miniconda for windows (https://youtu.be/MOEPe9TGBK0?t=1807) and how to start it and activate an environment (https://youtu.be/MOEPe9TGBK0?t=2051). The instructions are not exactly the same as the ones described below but they can help you better understand how to perform them.
