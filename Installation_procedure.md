@@ -24,7 +24,7 @@ Each of these macro can be directly downloaded in the folder of your choice.
   1. Drag and drop the macro file into Fiji to open it.
   2. Click run in the editor window to run it.
   
-Then follow the userguide understand how to operate the workflow.
+Then follow the userguide to understand how to operate the workflow.
 
 ## - Plugins: 
 The macro “Cell_ROIMaker.ijm” uses the plug-in MorpholibJ (Legland et al., 2016; https://imagej.net/MorphoLibJ).
