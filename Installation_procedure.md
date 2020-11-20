@@ -2,7 +2,7 @@
 
 In the simplest version of the installation you only need to have Fiji, the few macros listed below and the plug-in MorpholibJ.
 
-Then, data analysis can be performed with any appropriate software, but here we propose a user-friendly python __Jupyter notebook__ with predefined graph output and statistical analysis to ease the analysis of the results.
+Then, data analysis can be performed with any appropriate software, but here we propose a user-friendly python __Jupyter notebook__ with predefined graph output and statistical analysis to ease a robust analysis of the results.
 This notebook can be run locally on your computer after installing the required software and python libraries, __or with no install using binder directly from your web browser__. 
 
 The detailed explanation for the installation of these components is presented below.
