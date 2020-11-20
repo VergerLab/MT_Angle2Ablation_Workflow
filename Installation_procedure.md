@@ -97,11 +97,12 @@ To do this, on LINUX and MAC, you can directly copy and paste the commands below
    To do this, click on the green "code" icon on the top right side of the repository page (https://github.com/VergerLab/MT_Angle2Ablation_Workflow/). Then "Download ZIP". 
    Finally extract the content of the zip to the location of your choice. 
 
-5. __Create and activate a conda environment__. To do this, in your terminal (LINUX and MAC) or Miniconda Prompt (Windows), navigate to the "/MT_Angle2Ablation" folder that you have downloaded and extracted in the previous step.
-  > Note: To navigate to a specific directory, you can do it in the terminal (LINUX and MAC) or Miniconda Prompt (Windows) with the "cd" (Change directory) command. 
+5. __Create and activate a conda environment__. To do this, first, in your terminal (LINUX and MAC) or Miniconda Prompt (Windows), navigate to the "/MT_Angle2Ablation" folder that you have downloaded and extracted in the previous step.
+  > Note: To navigate to a specific directory, you can do it in the terminal (LINUX and MAC) or Miniconda Prompt (Windows) with the "cd" (Change directory) command. On Windows if you need to navigate to a different drive (e.g. D:\ instead of C:\), first write the name of the drive before the cd commande (i.e. "D: cd \...).
    Alternatively, on linux you can simply navigate with your regular graphical interface file manager (e.g. Nautilus). 
    Then, right-click in the folder of interest and select "Open in terminal".
    You can then directly paste the commands below into the terminal and press enter.
+   
 
 6. __Define a new conda environment__. To do this you can directly copy and paste the commands below into the terminal or Miniconda Prompt and press enter.
 
