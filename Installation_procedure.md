@@ -40,6 +40,7 @@ The macro “Cell_ROIMaker.ijm” uses the plug-in MorpholibJ (Legland et al., 2
 The data analysis workflow that we propose can be used with no prior knowledge of python programming, simply by following the instalation procedure and the steps in the jupyter notebook. However it can be useful to acquire a little bit of background on how to use this tool. The notebook is an efficient way to share our data analysis approach for better reproducibility. You can also modify the code as desired to adapt it to your sepcific needs.
 
 The following video provides a very useful introduction to the use of Python and jupyter notebooks for bioimage analysis. In particular for running a notebook on Binder (38:10 --> 41:47) for the No-install approach. https://www.youtube.com/watch?v=2KF8vBrp3Zw
+
 We also recommand the very useful lecture series on BioImage Analysis from Robert Haase (https://www.youtube.com/playlist?list=PL5ESQNfM5lc7SAMstEu082ivW4BDMvd0U), in particular the lectures 9 to 11 about the use of python for data analysis and hypothesis testing. In addition some help can be found for the local installation of miniconda in lecture 9b (https://youtu.be/MOEPe9TGBK0?t=1807).
 
 ### No-install Jupyter notebook online through Binder:
