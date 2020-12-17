@@ -24,7 +24,7 @@ Each of these macro can be directly downloaded in the folder of your choice.
   1. Drag and drop the macro file into Fiji to open it.
   2. Click run in the editor window to run it.
   
-Then follow the userguide to understand how to operate the workflow.
+Then follow the [user guide](https://github.com/VergerLab/MT_Angle2Ablation_Workflow/blob/master/Step%20by%20step%20user%20guide_CMTs_draft.pdf) to understand how to operate the workflow.
 
 ## - Plugins: 
 The macro “Cell_ROIMaker.ijm” uses the plug-in MorpholibJ (Legland et al., 2016; https://imagej.net/MorphoLibJ).
