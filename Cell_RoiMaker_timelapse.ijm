@@ -124,6 +124,7 @@ for (j=0; j<list.length; j++){
 	
 			//Erode binary image to widen segmented cell contours
 			selectWindow(File_name + "_cells-watershed-lines.tif");
+			run("Invert");
 			run("Erode");
 			run("Erode");
 			run("Erode");
