@@ -152,16 +152,19 @@ for (j=0; j<list.length; j++){
 			call("inra.ijpb.plugins.MorphologicalSegmentation.setDisplayFormat", "Catchment basins");
 			call("inra.ijpb.plugins.MorphologicalSegmentation.createResultImage");
 		    
-			//Close cell contour image and morpological segmentation window
+			//Close morpological segmentation window
 			selectWindow("Morphological Segmentation");
-			close();
-			selectWindow(list[j]);
 			close();
 	
 			//Merge labels if needed
+			setBatchMode("show");
 			selectWindow(File_name + "_cells-catchment-basins.tif");
 			setTool("multipoint");
 			waitForUser("Merge over-segmented area(s)?", "If there are over-segmented area(s) (often the ablation site) follow these steps (otherwise, skip!):\n1) Select the multi-point tool.\n2) Place a point on each of the two (or more) labels you want to merge.\n3) Go to Plugins>MorpholibJ>Label Images>Merge Label(s).\n4) For 'Gap management', select 'Orthogonal' and press OK. The labels should then be merged.\n5) Select the label image and press 'ctrl+shift+A' to remove the multi-points. \n6) You can then either merge other labels if needed (following the same procedure), or click OK below if you are done!");
+			
+			//Close cell contour image
+			selectWindow(Input_cells);
+			close();
 			
 			//User select ablation site
 			selectWindow(File_name + "_cells-catchment-basins.tif");
@@ -352,8 +355,8 @@ for (j=0; j<list.length; j++){
 			}
 			
 			//Save and close simulated MTs
-			roiManager("reset");
-			roiManager("show none");
+			Overlay.remove;
+			Roi.remove;
 			selectWindow(Output_MTSimu);
 			saveAs("tiff", dir + File.separator + Output_MTSimu);
 			close();
