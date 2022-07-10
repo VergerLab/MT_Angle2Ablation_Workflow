@@ -50,6 +50,7 @@ File.close(fLog);
 
 s = 0;
 
+setBatchMode("hide");
 //Make a stack of the timelapse to identify cells to track
 //Loop on all the images in the folder
 for (k=0; k<list.length; k++){
@@ -70,6 +71,7 @@ for (k=0; k<list.length; k++){
 		Input_MTs = File_name + features_suffix;
 		open(dir + File.separator + Input_cells);
 		open(dir + File.separator + Input_MTs);
+		getPixelSize(unit, pixelWidth, pixelHeight);
 		
 		//Make channel stack
 		run("Images to Stack", "name=" + s + " title=[] use");
@@ -79,19 +81,20 @@ for (k=0; k<list.length; k++){
 //Concatenate stack and make hyperstack
 run("Concatenate...", "all_open open");
 run("Re-order Hyperstack ...", "channels=[Slices (z)] slices=[Channels (c)] frames=[Frames (t)]");
-getPixelSize(unit, pixelWidth, pixelHeight)
+rename("Timelapse");
 
 //Register/align stack
 run("Linear Stack Alignment with SIFT MultiChannel", "registration_channel=1 initial_gaussian_blur=1.60 steps_per_scale_octave=3 minimum_image_size=64 maximum_image_size=1024 feature_descriptor_size=4 feature_descriptor_orientation_bins=8 closest/next_closest_ratio=0.92 maximal_alignment_error=25 inlier_ratio=0.05 expected_transformation=Rigid interpolate");
+setBatchMode("exit and display");
 
 //User can check the regustered 2 channel stack
 waitForUser("Check timelapse", "Visually identify cells to track\n(cells visible from the begining to the end of the timelapse).\nWhen you are ready, click OK here!");
 
 //Return stack to images to match original with transformed before saving
 setBatchMode("hide");
-selectWindow("Untitled");
+selectWindow("Timelapse");
 run("Stack to Images");
-selectWindow("Aligned_Untitled");
+selectWindow("Aligned_Timelapse");
 run("Stack to Images");
 
 //Save aligned images using names from original images (overwrite) 
@@ -330,6 +333,7 @@ for (j=0; j<list.length; j++){
 				close();
 			}
 		}else {
+			setBatchMode("hide");
 			//New image for geometry simulated MTs
 			Output_MTSimu = File_name + Simu_MT_suffix;
 			newImage(Output_MTSimu, "8-bit black", width, height, 1);
@@ -353,6 +357,7 @@ for (j=0; j<list.length; j++){
 			selectWindow(Output_MTSimu);
 			saveAs("tiff", dir + File.separator + Output_MTSimu);
 			close();
+			setBatchMode("exit and display");
 		}
 		//Segmentation done on first image
 		segmentation_done = true;
