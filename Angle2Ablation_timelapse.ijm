@@ -6,10 +6,12 @@ macro_name = "Angle2Ablation_timelapse";
 ///====================Description=====================///
 /*This macro allows an automated calculation of angles 
 between the output of fibrilTool_Batch_workflow.ijm and
-manually drawn lines corresponding to an ablation. It 
-natively uses as input, output from the 
-fibrilTool_Batch_workflow.ijm macro as well as from the 
-Line_RoiMaker_timelapse.ijm macro.
+manually drawn lines corresponding to an ablation. 
+Alternatively, it allows calculation of angles 
+between the output of fibrilTool_Batch_workflow.ijm from 
+real and "simulated" MTs.It natively uses as input, output 
+from the fibrilTool_Batch_workflow.ijm macro as well as 
+from the Line_RoiMaker_timelapse.ijm macro.
 
 See https://github.com/VergerLab/MT_Angle2Ablation_Workflow 
 for more detailed explanations of use.
@@ -20,7 +22,7 @@ macro_source = "https://github.com/VergerLab/MT_Angle2Ablation_Workflow/Angle2Ab
 // Input paramaters: input files suffixes
 microtubule_image_suffix = "_MTs.tif";
 FT_RoiSet_suffix = "_RoiSet_FT.zip";
-Line_RoiSet_suffix = "_RoiSet_lines.zip";
+Line_RoiSet_suffix = "_RoiSet_FTSimu.zip";
 Anisotropy_suffix = "_FT.txt";
 
 // Output paramaters: output file suffixes
@@ -30,6 +32,20 @@ Angles_image_suffix = "_Angle2Ablation.tif";
 ///====================================================///
 ///====================================================///
 ///====================================================///
+
+///Ask the user about fibril tool parameters
+Dialog.create("Fibril Tool");
+Dialog.addMessage("Choose angle comparison target\n(Manually drawn lines or simulated MTs)");
+Dialog.addChoice("Target\t", newArray("Simu", "Lines"));
+/// Add someting to test on single folder or on whole experiment...
+Dialog.show();
+Target = Dialog.getChoice();
+
+//Define which angle target
+if(Target == "Lines"){
+	Line_RoiSet_suffix = "_RoiSet_lines.zip";
+}
+
 
 print("\\Clear");
 
@@ -170,7 +186,8 @@ for (j=0; j<list.length; j++){
 			File.append(Folder_name + "\t" + s + "\t" + s + "\t" + (i + 1) + "\t" +  FTAngle + "\t" + LineAngle + "\t" + Ang2Abl + "\t" + AbsAng2Abl + "\t" + AcAbsAng2Abl + "\t" + Anisotropy, dir + File.separator + Output_angles_all);
 
 		    //write angles on image (one decimal)
-		    setColor("magenta");
+		    setColor("yellow");
+		    setFont("SansSerif", 20);
 		    Overlay.drawString(d2s(AcAbsAng2Abl,1), FT_X, FT_Y);
 			Overlay.add;
 		}
@@ -186,7 +203,7 @@ for (j=0; j<list.length; j++){
 		run("Close");
 		
 		//Write to log, input files used and output file generated
-		File.append("\tInput :\n\t=> " + Input_ROI_FT + "\n\t=> " + Input_ROI_lines + "\n\t=> " + Input_MTs + "\n\t=> " + Input_anisotropy + "\n\tOutput :\n\t<= " + Output_overlay + "\n\t<= " + Output_angles, dir + File.separator + log_file_name);
+		File.append("\tInput :\n\t=> " + Input_ROI_FT + "\n\t=> " + Input_ROI_lines + "\n\t=> " + Input_MTs + "\n\t=> " + Input_anisotropy + "\n\tOutput :\n\t<= " + Output_overlay + "\n\t<= " + Output_angles_all, dir + File.separator + log_file_name);
 		getDateAndTime(year, month, dayOfWeek, dayOfMonth, hour, minute, second, msec);
 		File.append("\t" + hour + ":" + minute + ":" + second + " " + dayOfMonth + "/" + month + "/" + year + "\n\n", dir + File.separator + log_file_name);
 	}
