@@ -66,7 +66,7 @@ File.close(fLog);
 //Generate output file containing all the measured angles of all the images analyzed in this file
 Output_angles_all = "All_" + UpDirName + Angles_file_suffix; ///Change is single folder...
 fAll = File.open(UpDirPath + File.separator + Output_angles_all);
-print(fAll, "Genotype/condition" + "\t" + "Sample Number" + "\t" + "Timepoint" + "\t" + "CellNumber" + "\t" + "FibrilTool Angle" + "\t" + "Drawn Line Angle" + "\t" + "Raw angle" + "\t" + "Absolute angle" + "\t" + "Acute absolute angle to ablation" + "\t" + "Anisotropy");
+print(fAll, "Genotype/condition" + "\t" + "Sample Number" + "\t" + "Timepoint" + "\t" + "CellNumber" + "\t" + "FibrilTool Angle" + "\t" + "Comparison Angle" + "\t" + "Raw angle" + "\t" + "Absolute angle" + "\t" + "Acute absolute angle to ablation" + "\t" + "Anisotropy");
 File.close(fAll);
 
 //Loop through Genotype/conditions folders
