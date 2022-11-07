@@ -1,0 +1,13 @@
+name: A2A_Tmlps_Stats
+channels:
+  - defaults
+dependencies:
+  - python=3.7
+  - pandas
+  - seaborn
+  - ipywidgets
+
+  - pip:
+    - voila
+
+
