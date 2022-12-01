@@ -1,50 +1,52 @@
 # How to install and run the different components of the workflow
 
-In the simplest version of the installation you only need to have Fiji, the few macros listed below and the plug-in MorpholibJ.
+In the simplest version of the installation you only need to have Fiji, two macros listed below and two additional fiji plugins (see below).
 
 Then, data analysis can be performed with any appropriate software, but here we propose a user-friendly python __Jupyter notebook__ with predefined graph output and statistical analysis to ease a robust analysis of the results.
-This notebook can be run locally on your computer after installing the required software and python libraries, __or with no install using binder directly from your web browser__. 
+__This notebook can be run online with no install directly from your web browser__, or locally on your computer after installing the required software and python libraries. 
 
 The detailed explanation for the installation of these components is presented below.
 
 ## - Fiji: 
 Most of the workflow is designed to run on Fiji. If you don’t already have it, download it and install it following the procedure describe at https://fiji.sc/.
 
-## - Macros: 
-You will need (available for download at): 
-- SurfCut2.ijm (https://github.com/VergerLab/SurfCut2) 
-- Cell_ROIMaker.ijm (https://github.com/VergerLab/MT_Angle2Ablation_Workflow)
-- FibrilTool_Batch_Workflow.ijm (https://github.com/VergerLab/FibrilTool_Batch_Workflow)
-- Line_ROIMaker.ijm (https://github.com/VergerLab/MT_Angle2Ablation_Workflow)
-- Angle2Ablation.ijm (https://github.com/VergerLab/MT_Angle2Ablation_Workflow)
+## - Plugins:
+- MorpholibJ (“IJPB-Plugins” update site) 
+- Linear Stack Alignment with SIFT MultiChannel (“PTBIOP” update site) 
 
-Each of these macro can be directly downloaded in the folder of your choice.
-
-  To run the macro: 
-  1. Drag and drop the macro file into Fiji to open it.
-  2. Click run in the editor window to run it.
-  
-Then follow the [user guide](https://github.com/VergerLab/MT_Angle2Ablation_Workflow/blob/master/Step%20by%20step%20user%20guide_CMTs_draft.pdf) to understand how to operate the workflow.
-
-## - Plugins: 
-The macro “Cell_ROIMaker.ijm” uses the plug-in MorpholibJ (Legland et al., 2016; https://imagej.net/MorphoLibJ).
-
-  To install it: 
+To install the required plugins, turn on the corresponding update sites.
   1. Go in the “Help” menu of Fiji and click on “Update…”. This will open the “ImageJ updater”. 
   2. In “ImageJ updater”, click on “Manage update sites”.
-  3. In the list, find “IJPB-Plugins” and click in the square next to it to add it. 
+  3. In the list, find e.g. “IJPB-Plugins” and click in the square next to it to add it. 
   4. Then close the window and apply changes on “ImageJ updater”. 
   5. Once this is done, Fiji needs to be restarted. 
+ 
+## - Macros: 
+You will need (available for download at): 
+- Surfcut2.ijm (https://github.com/VergerLab/SurfCut2) 
+
+For surfCut install follow instructions given in the corresponding repository.
+
+
+- Angle2ablation_Workflow_ToolSet.ijm (https://github.com/VergerLab/MT_Angle2Ablation_Workflow) 
+
+Click on "code" around the top right corner of the main page of this repository, and then ”download zip”. Then, unzip the file in the folder of your choice. Finally, copy the Angle2ablation_Workflow_ToolSet.ijm file and past it in the macros/toolsets folder of your Fiji install folder (on a Mac, access this by right clicking on the Fiji app in a Finder window and selecting "Show Package Contents"). 
+
+To check if the toolset was loaded properly, open Fiji, and click on ">>" at the right end of the Fiji window. You should see Angle2ablation_Workflow_ToolSet in the drop-down menu. Select it and the toolset should appear in your Fiji toolbar. 
+
+Then follow the [user guide](https://github.com/VergerLab/MT_Angle2Ablation_Workflow/blob/master/Step%20by%20step%20user%20guide_CMTs_draft.pdf) to understand how to operate the workflow.
 
 ## - Jupyter notebook: 
-The data analysis workflow that we propose can be used with no prior knowledge of python programming, simply by following the instalation procedure and the steps in the jupyter notebook. However it can be useful to acquire a little bit of background on how to use this tool. The notebook is an efficient way to share our data analysis approach for better reproducibility. You can also modify the code as desired to adapt it to your sepcific needs.
+The data analysis workflow that we propose can be used with no prior knowledge of python programming by simply running the notebook in the browser (see __No-install Jupyter notebook online through Binder__).
 
-The following video provides a very useful introduction to the use of Python and jupyter notebooks for bioimage analysis. In particular for running a notebook on Binder (38:10 --> 41:47) for the No-install approach. https://www.youtube.com/watch?v=2KF8vBrp3Zw
+However it can be useful to acquire a little bit of background on how to use this tool. The notebook is an efficient way to share our data analysis approach for better reproducibility. You can also install it locally simply by following the instalation procedure which can allow you to modify the code as desired to adapt it to your sepcific needs.
+
+
 
 We also recommand the very useful lecture series on BioImage Analysis from Robert Haase (https://www.youtube.com/playlist?list=PL5ESQNfM5lc7SAMstEu082ivW4BDMvd0U), in particular the lectures 9 to 11 about the use of python for data analysis and hypothesis testing. In addition some help can be found for the local installation of miniconda in lecture 9b (https://youtu.be/MOEPe9TGBK0?t=1807).
 
 ### No-install Jupyter notebook online through Binder:
-A temporary version of the Jupyter notebook can be used on your web browser using binder.
+_The following video provides a very useful introduction to the use of Python and jupyter notebooks for bioimage analysis. In particular for running a notebook on Binder (38:10 --> 41:47) for the No-install approach. https://www.youtube.com/watch?v=2KF8vBrp3Zw_
 
 1. __To start it__ click here [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/VergerLab/MT_Angle2Ablation_Workflow/master)
 
@@ -64,73 +66,47 @@ It can take a few minutes to start it. Ultimately you will see the "home page" w
 For additional help on how to perform these step, the video mentioned above shows how to start the notebook (https://youtu.be/2KF8vBrp3Zw?t=2289), run it (https://youtu.be/2KF8vBrp3Zw?t=2365), as well as how to upload your own data (https://youtu.be/2KF8vBrp3Zw?t=2427).
 
 ### Local installation:
-For additional help on how to perform the steps below, one of the video mentioned above shows how to install miniconda for windows (https://youtu.be/MOEPe9TGBK0?t=1807) and how to start it and activate an environment (https://youtu.be/MOEPe9TGBK0?t=2051). The instructions are not exactly the same as the ones described below but they can help you better understand how to perform them.
 
-1. __Download the miniconda installer__ from the official website repo.continuum.io\
-	LINUX: https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh \
-	MAC: https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh \
-	Windows: https://repo.continuum.io/miniconda/Miniconda2-latest-Windows-x86_64.exe
-
-	You can also use wget to perform this download from a terminal (LINUX or MAC):
-	
-       wget https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh
-
-2. __Install miniconda__ by running the installer:
+1. __Install miniconda :__
    
-   LINUX: Open a new terminal window, go to the directory where you downloaded the installer and run:
-   > Note: To navigate to a specific directory, you can do it in the terminal with the "cd" (Change directory) command. 
-   Alternatively, on linux you can simply navigate with your regular graphical interface file manager (e.g. Nautilus). 
-   Then, right-click in the folder of interest and select "Open in terminal".
-   You can then directly paste the commands below into the terminal and press enter.
-  
-       bash Miniconda2-latest-Linux-x86_64.sh
-       rm Miniconda2-latest-Linux-x86_64.sh
-      
-	MAC: Open a new terminal window, go to the directory where you downloaded the installer and run:
- 
-       bash Miniconda2-latest-MacOSX-x86_64.sh
-       rm Miniconda2-latest-MacOSX-x86_64.sh
-	
-   Windows: Execute the ".exe" installer and follow the instructions.
-	
-   During the installation you will be asked a number of choices. You can set up the directory of your choice when asked, e.g. ~/.miniconda. Make sure to answer YES when asked to add conda to your PATH.
+Follow the instructions provided here https://conda.io/projects/conda/en/stable/user-guide/install/index.html#regular-installation
 
-3. You should now have miniconda properly installed; __test your installation__ by running "conda" in a terminal to make sure the command is found. 
+2. You should now have miniconda properly installed; __test your installation__ by running "conda" in a terminal to make sure the command is found. 
 To do this, on LINUX and MAC, you can directly copy and paste the commands below into the terminal and press enter. On Windows, look for "Miniconda prompt" in the search bar (next to the windows icon, bottom left of the desktop screen). Open the "Miniconda prompt" and directly continue to step 4.
 
 	   conda
 
 
-4. __Download and extract the "MT_Angle2Ablation" repository__ to the location of your choice.
+3. __Download and extract the "MT_Angle2Ablation" repository__ to the location of your choice.
    To do this, click on the green "code" icon on the top right side of the repository page (https://github.com/VergerLab/MT_Angle2Ablation_Workflow/). Then "Download ZIP". 
    Finally extract the content of the zip to the location of your choice. 
 
-5. __Create and activate a conda environment__. To do this, first, in your terminal (LINUX and MAC) or Miniconda Prompt (Windows), navigate to the "/MT_Angle2Ablation" folder that you have downloaded and extracted in the previous step.
+4. __Create and activate a conda environment__. To do this, first, in your terminal (LINUX and MAC) or Miniconda Prompt (Windows), navigate to the "/MT_Angle2Ablation" folder that you have downloaded and extracted in the previous step.
   > Note: To navigate to a specific directory, you can do it in the terminal (LINUX and MAC) or Miniconda Prompt (Windows) with the "cd" (Change directory) command. On Windows if you need to navigate to a different drive (e.g. D:\ instead of C:\), first write the name of the drive before the cd commande (i.e. "D: cd \\...).
    Alternatively, on linux you can simply navigate with your regular graphical interface file manager (e.g. Nautilus). 
    Then, right-click in the folder of interest and select "Open in terminal".
    You can then directly paste the commands below into the terminal and press enter.
    
 
-6. __Define a new conda environment__. To do this you can directly copy and paste the commands below into the terminal or Miniconda Prompt and press enter.
+5. __Define a new conda environment__. To do this you can directly copy and paste the commands below into the terminal or Miniconda Prompt and press enter.
 
        conda env create -f environment.yml
    
  This should take a few seconds.
 
-7. __Activate the environment__.
+6. __Activate the environment__.
 
        conda activate Stats_Angle2Abaltion
 
-8. __Start Jupyter__.
+7. __Start Jupyter__.
 
 		jupyter lab
 
 A page called "JupyterLab" should open automatically on your web browser.
 
-9. __Open the Python notebook__. To do that, in the menu on the left, double click on "Stats_Angle2Abaltion.ipynb".
+8. __Open the Python notebook__. To do that, in the menu on the left, double click on "Stats_Angle2Abaltion.ipynb".
 
-10. Finally, __to run the notebook__, follow the instructions in the notebook itself.
+9. Finally, __to run the notebook__, follow the instructions in the notebook itself.
 
 When you are done with the analysis, you can close the web page and the terminal or Miniconda prompt that was used to launch Jupyter lab.
 
