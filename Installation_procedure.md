@@ -90,17 +90,17 @@ To do this, on LINUX and MAC, you can directly copy and paste the commands below
 
 5. __Define a new conda environment__. To do this you can directly copy and paste the commands below into the terminal or Miniconda Prompt and press enter.
 
-	> conda env create -f environment.yml
+		conda env create -f environment.yml
    
  This should take a few seconds.
 
 6. __Activate the environment__.
 
-	> conda activate A2A_Tmlps_Stats
+		conda activate A2A_Tmlps_Stats
 
 7. __Start Jupyter__.
 
-	> jupyter notebook 
+		jupyter notebook 
 
 A new page will open in your web browser.
 
