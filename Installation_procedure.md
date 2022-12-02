@@ -1,6 +1,6 @@
 # How to install and run the different components of the workflow
 
-In the simplest version of the installation you only need to have Fiji, two macros listed below and two additional fiji plugins (see below).
+In the simplest version of the installation you only need to have Fiji, two macros listed below and two additional fiji plugins.
 
 Then, data analysis can be performed with any appropriate software, but here we propose a user-friendly python __Jupyter notebook__ with predefined graph output and statistical analysis to ease a robust analysis of the results.
 __This notebook can be run online with no install directly from your web browser__, or locally on your computer after installing the required software and python libraries. 
@@ -25,19 +25,19 @@ To install the required plugins, turn on the corresponding update sites.
 You will need (available for download at): 
 - Surfcut2.ijm (https://github.com/VergerLab/SurfCut2) 
 
-For surfCut install follow instructions given in the corresponding repository.
+For SurfCut install follow instructions given in the corresponding repository.
 
 
 - Angle2ablation_Workflow_ToolSet.ijm (https://github.com/VergerLab/MT_Angle2Ablation_Workflow) 
 
-Click on "code" around the top right corner of the main page of this repository, and then ”download zip”. Then, unzip the file in the folder of your choice. Finally, copy the Angle2ablation_Workflow_ToolSet.ijm file and past it in the macros/toolsets folder of your Fiji install folder (on a Mac, access this by right clicking on the Fiji app in a Finder window and selecting "Show Package Contents"). 
+Click on "code" around the top right corner of the main page of this repository, and then ”download zip”. Then, unzip the file in the folder of your choice. Finally, copy the Angle2ablation_Workflow_ToolSet.ijm file and past it in the "/macros/toolsets/" folder of your Fiji install folder (on a Mac, access this by right clicking on the Fiji app in a Finder window and selecting "Show Package Contents"). 
 
 To check if the toolset was loaded properly, open Fiji, and click on ">>" at the right end of the Fiji window. You should see Angle2ablation_Workflow_ToolSet in the drop-down menu. Select it and the toolset should appear in your Fiji toolbar. 
 
 Then follow the [user guide](https://github.com/VergerLab/MT_Angle2Ablation_Workflow/blob/master/Step%20by%20step%20user%20guide_CMTs_draft.pdf) to understand how to operate the workflow.
 
 ## - Jupyter notebook: 
-The data analysis workflow that we propose can be used with no prior knowledge of python programming by simply running the notebook in the browser (see __No-install Jupyter notebook online through Binder__).
+The data analysis workflow that we propose can be used with no prior knowledge of python programming by simply running the notebook in the browser (see __No-install Jupyter notebook online through Binder__ below).
 
 However it can be useful to acquire a little bit of background on how to use this tool. The notebook is an efficient way to share our data analysis approach for better reproducibility. You can also install it locally simply by following the instalation procedure which can allow you to modify the code as desired to adapt it to your sepcific needs.
 
@@ -52,7 +52,7 @@ _The following video provides a very useful introduction to the use of Python an
 
 It can take a few minutes to start it. Ultimately you will see the "home page" with all the content of the Github repository.
 
-2. You can first __test the Notebook with the pre-loaded data__. To do this, click on “Stats_Angle2Ablation.ipynb”. This will start a new tab on your browser with the Jupyter notebook named “Statistics for Angle to ablation Analysis”. Then, follow the instructions in the notebook itself.
+2. You can first __test the Notebook with the pre-loaded data__. To do this, click on “A2A_Tmlps_Stats.ipynb”. This will start a new tab on your browser with the Jupyter notebook. Then, follow the instructions in the notebook itself.
 
 3. To perform your own analysis, __upload your own data__. 
  	- On the "home page", click "New" and "Folder" in the top right corner.
