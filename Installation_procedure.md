@@ -90,25 +90,25 @@ To do this, on LINUX and MAC, you can directly copy and paste the commands below
 
 5. __Define a new conda environment__. To do this you can directly copy and paste the commands below into the terminal or Miniconda Prompt and press enter.
 
-       conda env create -f environment.yml
+	> conda env create -f environment.yml
    
  This should take a few seconds.
 
 6. __Activate the environment__.
 
-       conda activate Stats_Angle2Abaltion
+	> conda activate A2A_Tmlps_Stats
 
 7. __Start Jupyter__.
 
-		jupyter lab
+	> jupyter notebook 
 
-A page called "JupyterLab" should open automatically on your web browser.
+A new page will open in your web browser.
 
-8. __Open the Python notebook__. To do that, in the menu on the left, double click on "Stats_Angle2Abaltion.ipynb".
+8. __Open the Python notebook__. To do that, in the file list on the jupyter page, double click on "A2A_Tmlps_Stats.ipynb".
 
 9. Finally, __to run the notebook__, follow the instructions in the notebook itself.
 
-When you are done with the analysis, you can close the web page and the terminal or Miniconda prompt that was used to launch Jupyter lab.
+When you are done with the analysis, you can close the web page and the terminal or Miniconda prompt that was used to launch Jupyter.
 
 Later on, to restart an analysis, you only need to follow steps 7 to 10.
   
