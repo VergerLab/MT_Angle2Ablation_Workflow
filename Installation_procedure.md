@@ -30,7 +30,7 @@ For SurfCut install follow instructions given in the corresponding repository.
 
 - Angle2ablation_Workflow_ToolSet.ijm (https://github.com/VergerLab/MT_Angle2Ablation_Workflow) 
 
-Click on "code" around the top right corner of the main page of this repository, and then ”download zip”. Then, unzip the file in the folder of your choice. Finally, copy the Angle2ablation_Workflow_ToolSet.ijm file and past it in the "/macros/toolsets/" folder of your Fiji install folder (on a Mac, access this by right clicking on the Fiji app in a Finder window and selecting "Show Package Contents"). 
+Click on the green "code" botton around the top right corner of the main page of this repository, and then ”download zip”. Then, unzip the file in the folder of your choice. Finally, copy the Angle2ablation_Workflow_ToolSet.ijm file and past it in the "/macros/toolsets/" folder of your Fiji install folder (on a Mac, access this by right clicking on the Fiji app in a Finder window and selecting "Show Package Contents"). 
 
 To check if the toolset was loaded properly, open Fiji, and click on ">>" at the right end of the Fiji window. You should see Angle2ablation_Workflow_ToolSet in the drop-down menu. Select it and the toolset should appear in your Fiji toolbar. 
 
@@ -77,7 +77,7 @@ To do this, on LINUX and MAC, you can directly copy and paste the commands below
 	   conda
 
 
-3. __Download and extract the "MT_Angle2Ablation" repository__ to the location of your choice.
+3. If not previously done for the macro, __download and extract the "MT_Angle2Ablation" repository__ to the location of your choice.
    To do this, click on the green "code" icon on the top right side of the repository page (https://github.com/VergerLab/MT_Angle2Ablation_Workflow/). Then "Download ZIP". 
    Finally extract the content of the zip to the location of your choice. 
 
