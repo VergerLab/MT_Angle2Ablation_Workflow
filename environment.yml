@@ -6,7 +6,7 @@ dependencies:
   - pandas
   - seaborn
   - ipywidgets
-  - bumpy
+  - numpy
 
   - pip:
     - ipyfilechooser
