@@ -30,7 +30,7 @@ For SurfCut install follow instructions given in the corresponding repository.
 
 - Angle2ablation_Workflow_ToolSet.ijm (https://github.com/VergerLab/MT_Angle2Ablation_Workflow) 
 
-Click on the green "code" botton around the top right corner of the main page of this repository, and then ”download zip”. Then, unzip the file in the folder of your choice. Finally, copy the Angle2ablation_Workflow_ToolSet.ijm file and past it in the "/macros/toolsets/" folder of your Fiji install folder (on a Mac, access this by right clicking on the Fiji app in a Finder window and selecting "Show Package Contents"). 
+Click on the green "code" button around the top right corner of the main page of this repository, and then ”download zip”. Then, unzip the file in the folder of your choice. Finally, copy the Angle2ablation_Workflow_ToolSet.ijm file and past it in the "/macros/toolsets/" folder of your Fiji install folder (on a Mac, access this by right clicking on the Fiji app in a Finder window and selecting "Show Package Contents"). 
 
 To check if the toolset was loaded properly, open Fiji, and click on ">>" at the right end of the Fiji window. You should see Angle2ablation_Workflow_ToolSet in the drop-down menu. Select it and the toolset should appear in your Fiji toolbar. 
 
@@ -39,31 +39,22 @@ Then follow the [user guide](https://github.com/VergerLab/MT_Angle2Ablation_Work
 ## - Jupyter notebook: 
 The data analysis workflow that we propose can be used with no prior knowledge of python programming by simply running the notebook in the browser (see __No-install Jupyter notebook online through Binder__ below).
 
-However it can be useful to acquire a little bit of background on how to use this tool. The notebook is an efficient way to share our data analysis approach for better reproducibility. You can also install it locally simply by following the instalation procedure which can allow you to modify the code as desired to adapt it to your sepcific needs.
+However it can be useful to acquire a little bit of background on how to use this tool. The notebook is an efficient way to share our data analysis approach for better reproducibility. You can also install it locally simply by following the installation procedure which can allow you to modify the code as desired to adapt it to your sepcific needs.
 
 
 
 We also recommand the very useful lecture series on BioImage Analysis from Robert Haase (https://www.youtube.com/playlist?list=PL5ESQNfM5lc7SAMstEu082ivW4BDMvd0U), in particular the lectures 9 to 11 about the use of python for data analysis and hypothesis testing. In addition some help can be found for the local installation of miniconda in lecture 9b (https://youtu.be/MOEPe9TGBK0?t=1807).
 
 ### No-install Jupyter notebook online through Binder:
-_The following video provides a very useful introduction to the use of Python and jupyter notebooks for bioimage analysis. In particular for running a notebook on Binder (38:10 --> 41:47) for the No-install approach. https://www.youtube.com/watch?v=2KF8vBrp3Zw_
 
-1. __To start it__ click here [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/VergerLab/MT_Angle2Ablation_Workflow/master)
+__To start it click here__ [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/VergerLab/MT_Angle2Ablation_Workflow/master)
 
 It can take a few minutes to start it. Ultimately you will see the "home page" with all the content of the Github repository.
+Then simply follow the instructions in step 7 of the user guide to get started.
 
-2. You can first __test the Notebook with the pre-loaded data__. To do this, click on “A2A_Tmlps_Stats.ipynb”. This will start a new tab on your browser with the Jupyter notebook. Then, follow the instructions in the notebook itself.
+You can first __test the Notebook with the test data__ available on this repository under "/TestData/".
 
-3. To perform your own analysis, __upload your own data__. 
- 	- On the "home page", click "New" and "Folder" in the top right corner.
- 	- Tick the box next to the newly created "Untitled Folder".
- 	- Click on "rename" above, and rename the folder "MyData" (or anything else of your choice).
- 	- Enter the "MyData" folder and at the top right corner click "Upload".
- 	- From the output of the Angle2Ablation.ijm macro, you only need to upload the file called All_….txt. Each genotype and timepoint analyzed generate one such file. Each of these file has to be put in a separate folder under the "MyData" directory. As an exemple you can look at the content of the "TestData" directory containing the pre-loaded test data.
-
-4. You can then __perform your own analysis__ using the notebook, in the same manner as with the pre-loaded data. Don't forget to define the correct path to your own data in the notebook. Also don't forget to download the generate dtat at the end of the analysis, as the session will be erased when you are done.
-
-For additional help on how to perform these step, the video mentioned above shows how to start the notebook (https://youtu.be/2KF8vBrp3Zw?t=2289), run it (https://youtu.be/2KF8vBrp3Zw?t=2365), as well as how to upload your own data (https://youtu.be/2KF8vBrp3Zw?t=2427).
+_The following video provides a very useful introduction to the use of Python and jupyter notebooks for bioimage analysis. In particular for running a notebook on Binder (38:10 --> 41:47) for the No-install approach. https://www.youtube.com/watch?v=2KF8vBrp3Zw_
 
 ### Local installation:
 
@@ -106,7 +97,7 @@ A new page will open in your web browser.
 
 8. __Open the Python notebook__. To do that, in the file list on the jupyter page, double click on "A2A_Tmlps_Stats.ipynb".
 
-9. Finally, __to run the notebook__, follow the instructions in the notebook itself.
+9. Finally, __to run the notebook__, follow the instructions in the notebook itself and userguide.
 
 When you are done with the analysis, you can close the web page and the terminal or Miniconda prompt that was used to launch Jupyter.
 
