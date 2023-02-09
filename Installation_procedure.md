@@ -101,7 +101,7 @@ A new page will open in your web browser.
 
 When you are done with the analysis, you can close the web page and the terminal or Miniconda prompt that was used to launch Jupyter.
 
-Later on, to restart an analysis, you only need to follow steps 7 to 10.
+Later on, to restart an analysis, you only need to follow steps 7 to 9.
   
   > Conda tips:
   >
