@@ -1,6 +1,6 @@
 # How to install and run the different components of the workflow
 
-In the simplest version of the installation you only need to have Fiji, two macros listed below and two additional fiji plugins.
+In the simplest version of the installation you only need to have Fiji, the "Angle2ablation_Workflow_ToolSet.ijm" macro Toolset and two additional fiji plugins.
 
 Then, data analysis can be performed with any appropriate software, but here we propose a user-friendly python __Jupyter notebook__ with predefined graph output and statistical analysis to ease a robust analysis of the results.
 __This notebook can be run online with no install directly from your web browser__, or locally on your computer after installing the required software and python libraries. 
@@ -23,11 +23,6 @@ To install the required plugins, turn on the corresponding update sites.
  
 ## - Macros: 
 You will need (available for download at): 
-- Surfcut2.ijm (https://github.com/VergerLab/SurfCut2) 
-
-For SurfCut install follow instructions given in the corresponding repository.
-
-
 - Angle2ablation_Workflow_ToolSet.ijm (https://github.com/VergerLab/MT_Angle2Ablation_Workflow) 
 
 Click on the green "code" button around the top right corner of the main page of this repository, and then ”download zip”. Then, unzip the file in the folder of your choice. Finally, copy the Angle2ablation_Workflow_ToolSet.ijm file and past it in the "/macros/toolsets/" folder of your Fiji install folder (on a Mac, access this by right clicking on the Fiji app in a Finder window and selecting "Show Package Contents"). 
