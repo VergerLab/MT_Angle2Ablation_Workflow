@@ -34,6 +34,7 @@ macro_source = "https://github.com/VergerLab/MT_Angle2Ablation_Workflow/";
 // Input paramaters: input files suffixes
 contours_suffix = "_cells.tif";
 features_suffix = "_MTs.tif";
+AlbConvexHull = false; //true
 
 // Output paramaters: output file suffixes
 contour_Roiset_suffix = "_RoiSet_cells.zip";
@@ -320,6 +321,9 @@ for (j=0; j<list.length; j++){
 			Satisfied = false;
 			while (Satisfied==false){ 
 				roiManager("Select", 0);
+				if(AlbConvexHull == true){
+					run("Convex Hull");
+				};
 				BandWidth=getNumber("Set Value for ablation band", 30);
 				run("Enlarge...", "enlarge=" + BandWidth);
 				Dialog.create("Satisfied with ablation band width?");
@@ -386,6 +390,9 @@ for (j=0; j<list.length; j++){
 				Spacing=getNumber("Set spacing value", 10);
 				for (i = 0; i < Iteration; i++) {
 					roiManager("Select", 0);
+					if(AlbConvexHull == true){
+						run("Convex Hull");
+					};
 					BandEnlarge = (1 + i) * (Spacing);
 					run("Enlarge...", "enlarge=" + BandEnlarge);
 					run("Make Band...", "band=1");
@@ -423,6 +430,9 @@ for (j=0; j<list.length; j++){
 			//Simulate MTs predicted orientation by successive enlargement, band and clearing of ablation ROI
 			for (i = 0; i < Iteration; i++) {
 				roiManager("Select", 0);
+				if(AlbConvexHull == true){
+					run("Convex Hull");
+				};
 				BandEnlarge = (1 + i) * (Spacing);
 				run("Enlarge...", "enlarge=" + BandEnlarge);
 				run("Make Band...", "band=1");

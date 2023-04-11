@@ -75,23 +75,21 @@ if (Folder=="Single"){
 }else {
 	//Loop through Genotype/conditions/samples folders architecture
 	for (a=0; a<ListUpDir.length; a++){
-		print("Geno " + ListUpDir[a]);
 		GenoDirPath = UpDirPath + ListUpDir[a];
-		print("GenoDir " + GenoDirPath);
 		if(File.isDirectory(GenoDirPath)){
-			print("Geno " + ListUpDir[a]);
 			GenoDirName = File.getName(GenoDirPath);
-			print(GenoDirName);
+			GenoDirPath = UpDirPath + GenoDirName + File.separator; //Redefines path with proper file separator (for windows compatibility)
+			print("Geno " + GenoDirName);
+			print("GenoDir " + GenoDirPath);
 			listGenoDir = getFileList(GenoDirPath);
 			//Loop through sample folders
 			for (b=0; b<listGenoDir.length; b++){
-				print("sample " + listGenoDir[b]);
 				SampleDirPath = GenoDirPath + listGenoDir[b];
-				print("sampleDir " + SampleDirPath);
 				if(File.isDirectory(SampleDirPath)){
-					print("Geno " + listGenoDir[b]);
 					SampleDirName = File.getName(SampleDirPath);
-					print(SampleDirName);
+					SampleDirPath = GenoDirPath + SampleDirName + File.separator; //Redefines path with proper file separator (for windows compatibility)
+					print("sample " + SampleDirName);
+					print("sampleDir " + SampleDirPath);
 					list = getFileList(SampleDirPath);
 					
 					//Run the angle to ablation calculation for the selected folder
