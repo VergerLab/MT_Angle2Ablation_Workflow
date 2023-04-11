@@ -51,7 +51,7 @@ You can first __test the Notebook with the test data__ available on this reposit
 
 _The following video provides a very useful introduction to the use of Python and jupyter notebooks for bioimage analysis. In particular for running a notebook on Binder (38:10 --> 41:47) for the No-install approach. https://www.youtube.com/watch?v=2KF8vBrp3Zw_
 
-### Local installation:
+### Local installation (Optional):
 
 1. __Install miniconda :__
    
